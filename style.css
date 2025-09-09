@@ -1,0 +1,121 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+p,div
+{
+    font-size: 15px;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: rgb(65, 230, 110);
+    font-weight: 500;
+    transition: 250ms;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: rgb(65, 230, 110);
+    font-weight: 600;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: 100ms;
+}
+
+a:active
+{
+    text-decoration: none;
+    color: rgb(50, 150, 255);
+    font-weight: 500;
+} 
+
+.tbtbtbrpg
+{
+    background: linear-gradient(to right, rgb(100, 255, 100), rgb(50, 150, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.known
+{
+    margin-bottom: 5px;
+}
+
+.logo_strip
+{
+    display: flex;
+    width: body;
+    margin-top: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    width: 60px;
+    height: 60px;
+    
+    padding-left: 1px;
+    padding-right: 1px;
+    
+    margin: 0;
+}
+.details
+{
+    font-size: 15px;
+    background-color: rgb(20, 20, 20);
+
+    border: solid;
+    border-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    border-width: 1px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+    margin: 5px;
+
+    position: fixed;
+
+    opacity: 0;
+    transition: opacity 150ms;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    max-width: max-content;
+    max-height: max-content;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.c_programming:hover + .details_c_programming, .c_plus_plus:hover + .details_c_plus_plus, .html:hover + .details_html, .css:hover + .details_css
+{
+    opacity: 1;
+}
+
+.details_c_programming, .details_c_plus_plus, .details_html, .details_css
+{
+    width: 95vw;
+    max-width: max-content;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
